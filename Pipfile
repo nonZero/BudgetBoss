@@ -8,6 +8,8 @@ verify_ssl = true
 [packages]
 django = "*"
 ipython = "*"
+django-extensions = "*"
+silly = "*"
 
 [requires]
 python_version = "3.7"
