@@ -14,20 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.http import HttpResponse
 from django.urls import path
-
-def home(request):
-    n = 12
-    return HttpResponse(f"You are {n} years old!")
-
-
-def age(request, n):
-    x = n + 1
-    return HttpResponse(f"You are {x} years old!")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
-    path('age/<int:n>/', age),
 ]
