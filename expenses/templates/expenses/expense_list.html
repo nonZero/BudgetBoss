@@ -1,8 +1,17 @@
 <h1>
-    HELLLLOOOOOOOOOOOOOOO!!!!!!!!!!!!!!!!!!!!!!!!!
+    BUDGET BOSS
 </h1>
-<ul>
-    {% for item in yyy %}
-        <li>{{ item }}</li>
+<table border="1">
+    <tr>
+        <th>Date</th>
+        <th>Amount</th>
+        <th>Title</th>
+    </tr>
+    {% for object in object_list %}
+        <tr>
+            <td>{{ object.date }}</td>
+            <td>${{ object.amount }}</td>
+            <td>{{ object.title }}</td>
+        </tr>
     {% endfor %}
-</ul>
+</table>
