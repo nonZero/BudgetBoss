@@ -1,0 +1,9 @@
+<h1>Contact US</h1>
+<form method="post">
+    {% csrf_token %}
+    <ul>
+    {{ form.as_ul }}
+    </ul>
+
+    <button>CONTACT US</button>
+</form>
