@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def expense_list(request):
+    return render(request, "expenses/expense_list.html", {
+        'xxx': 12345,
+        'yyy': ["cookies", "milk", "coffee"],
+    })
