@@ -11,7 +11,9 @@
         <tr>
             <td>{{ object.date }}</td>
             <td>${{ object.amount }}</td>
-            <td>{{ object.title }}</td>
+            <td>
+                <a href="{% url "expenses:detail" object.id %}">{{ object.title }}</a>
+            </td>
         </tr>
     {% endfor %}
 </table>
